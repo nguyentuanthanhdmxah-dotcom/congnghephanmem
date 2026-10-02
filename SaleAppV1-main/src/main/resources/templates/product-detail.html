@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Chi tiết sản phẩm</title>
+
+</head>
+
+<body>
+
+    <a href="/products">
+        ← Quay lại danh sách
+    </a>
+
+    <h1 th:text="${product.name}">
+        Tên sản phẩm
+    </h1>
+
+    <p>
+        Mô tả:
+        <span th:text="${product.description}">
+        </span>
+    </p>
+
+    <p>
+        Giá:
+        <span th:text="${product.price}">
+        </span>
+        VNĐ
+    </p>
+
+    <p>
+        Mã danh mục:
+        <span th:text="${product.categoryId}">
+        </span>
+    </p>
+
+</body>
+
+</html>
